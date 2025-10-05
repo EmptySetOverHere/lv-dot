@@ -44,7 +44,6 @@ namespace onboardDetector{
  
         this->states = this->states + K * (z - this->H * this->states);
         this->P = (MatrixXd::Identity(this->P.rows(),this->P.cols()) - K * this->H) * this->P;
-
     }
 
     double kalman_filter::output(int state_index)

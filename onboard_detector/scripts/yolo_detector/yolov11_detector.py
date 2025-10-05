@@ -29,12 +29,11 @@ class yolo_detector:
         self.img_received = False
         self.img_detected = False
 
-
         # init and load
         self.model = YOLO(os.path.join(path_curr, weight))
         # self.model = Detector(80, True).to(device)
         # self.model.load_state_dict(torch.load(os.path.join(path_curr, weight), map_location=device))
-        self.model.eval()
+        # self.model.eval()
 
         # subscriber
         self.br = CvBridge()
