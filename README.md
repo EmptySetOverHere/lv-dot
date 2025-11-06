@@ -37,13 +37,16 @@ Zhefan Xu\*, Haoyu Shen\*, Xinming Han, Hanyu Jin, Kanlong Ye, and Kenji Shimada
 - **2025-02-28:** The GitHub code, video demos, and relavant papers for our LV-DOT framework are released. The authors will actively maintain and update this repo!
 
 ## Table of Contents
-- [Installation Guide](#I-Installation-Guide)
-- [Run Demo](#II-Run-Demo)
-    - [Run on dataset](#a-Run-on-dataset)
-    - [Run on your device](#b-Run-on-your-device)
-- [LV-DOT Framework and Results](#III-LV-DOT-Framework-and-Results)
-- [Citation and Reference](#IV-Citation-and-Reference)
-- [Acknowledgement](#V-Acknowledgement)
+- [LV-DOT: LiDAR-Visual Dynamic Obstacle Detection and Tracking for Autonomous Robots](#lv-dot-lidar-visual-dynamic-obstacle-detection-and-tracking-for-autonomous-robots)
+  - [News](#news)
+  - [Table of Contents](#table-of-contents)
+  - [I. Installation Guide](#i-installation-guide)
+  - [II. Run Demo](#ii-run-demo)
+    - [a. Run on dataset](#a-run-on-dataset)
+    - [b. Run on your device](#b-run-on-your-device)
+  - [III. LV-DOT Framework and Results](#iii-lv-dot-framework-and-results)
+  - [IV. Citation and Reference](#iv-citation-and-reference)
+  - [V. Acknowledgement](#v-acknowledgement)
 
 
 ## I. Installation Guide
@@ -113,7 +116,7 @@ The LV-DOT can be directly utilized to assist mobile robot navigation and collis
     <td><img src="media/navigation-demo.gif" style="width: 100%;"></td>
     <td><img src="media/avoidance-demo.gif" style="width: 100%;"></td>
   </tr>
-</table>
+</table>`
 
 ## III. LV-DOT Framework and Results
 The LV-DOT framework is shown below. Using onboard LiDAR, camera, and odometry inputs, the LiDAR and depth detection modules detect 3D obstacles, while the color detection module identifies 2D dynamic obstacles. The LiDAR-visual fusion module refines these detections, and the tracking module classifies obstacles as static or dynamic.
